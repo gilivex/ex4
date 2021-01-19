@@ -99,7 +99,7 @@ node* freeUP(node* n){
 void ifWord(node* n, char* word){
     if(n->count!=0){
         //print the word
-        printf("%s  %ld\n", word, n->count );
+        printf("%s %ld\n", word, n->count );
         //if the program return to this word, so dont print the word again.
         n->count=0;
     }
@@ -133,7 +133,7 @@ void freeNodesAndPrint(node* n, char* word, int index){
         word[index]=0;
         --index;
         if((n->count)!=0){
-            printf("%s  %ld\n", word, n->count );
+            printf("%s %ld\n", word, n->count );
         }
         char letter=(n->letter);
         temp=n->parent;
